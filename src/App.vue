@@ -2,12 +2,18 @@
   <div id="app">
     <img src="./assets/logo.png">
     <router-view/>
+    <sign-in/>
   </div>
 </template>
 
 <script>
+import SignIn from '@/components/SignIn';
+
 export default {
   name: 'app',
+  components: {
+    SignIn,
+  },
 };
 </script>
 
